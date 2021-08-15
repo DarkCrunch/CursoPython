@@ -117,7 +117,7 @@ if numero >= 0 and numero <= 5:
 else:
     print(f'{numero} no se encuentra en el rango (0 - 5)')
 
-#Ejercicio asistencia de padre a hijo
+# Ejercicio asistencia de padre a hijo
 vacaciones = False
 diaDescanso = False
 if vacaciones or diaDescanso:
@@ -132,4 +132,31 @@ if not (vacaciones or diaDescanso):
 else:
     print('El padre no puede asistir al juego del hijo')
 
+# Ejercicio rango de edad entre 20's o 30's usando condicional if anidada
 edad = int(input('Proporciona tu edad: '))
+if (edad >= 20 and edad < 30) or (edad >= 30 and edad < 40):
+    print(f'Tu edad de {edad} años ,se encuentra dentro del rango de 20\'s o 30\'s')
+    if edad >= 20 and edad < 30:
+        print('Se encuentra dentro de los 20\'s')
+    elif edad >= 30 and edad < 40:
+        print('Se encuentra dentro de los 30\'s')
+else:
+    print(f'Tu edad de {edad} años ,no se encuentra dentro del rango de 20\'s o 30\'s')
+
+#Ejercicio el mayor de dos numeros(numero1, numero2)
+numero1 = int(input('Proporcioma el numero1: '))
+numero2 = int(input('Proporciona el numero2: '))
+if numero1 == numero2:
+    print('Ambos numeros son iguales')
+elif numero1 > numero2:
+    print(f'El numero mayor es: {numero1}')
+else:
+    print(f'El numero mayor es: {numero2}')
+
+# Ejercicio de Tienda de libros
+nombreLibro = input('Proporcione los siguientes datos del libro:\nProporcione el nombre del libro: ')
+idLibro = int(input('Proporcione el ID: '))
+precioLibro = round(float(input('Proporcione el precio: ')), 2)
+envioLibro = bool(input('Indique si el envio es gratuito (True / False): '))
+print(f'Nombre: {nombreLibro}\nId: {idLibro}\nPrecio: {precioLibro}\nEnvio gratuito: {envioLibro}')
+
