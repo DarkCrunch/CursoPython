@@ -155,8 +155,18 @@ else:
 
 # Ejercicio de Tienda de libros
 nombreLibro = input('Proporcione los siguientes datos del libro:\nProporcione el nombre del libro: ')
-idLibro = int(input('Proporcione el ID: '))
-precioLibro = round(float(input('Proporcione el precio: ')), 2)
-envioLibro = bool(input('Indique si el envio es gratuito (True / False): '))
+idLibro = int(input('Proporcione el ID del libro: '))
+precioLibro = round(float(input('Proporcione el precio del libro: ')), 2)
+envioLibro = input('Indique si el envio es gratuito (True / False): ')
+if envioLibro == 'True':
+    envioLibro = True
+elif envioLibro == 'False':
+    envioLibro = False
+else:
+    envioLibro = 'Valor incorrecto, debe escribir True/False'
 print(f'Nombre: {nombreLibro}\nId: {idLibro}\nPrecio: {precioLibro}\nEnvio gratuito: {envioLibro}')
-
+#impresion multilinea
+print(f'''
+    Es una impresion
+    multilinea
+''')
